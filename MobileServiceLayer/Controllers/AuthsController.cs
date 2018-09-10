@@ -13,9 +13,9 @@ namespace MobileServiceLayer.Controllers
     {
         // GET: api/Auths
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Auth> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Auth[] { new Auth(),new Auth(),new Auth(),new Auth() };
         }
 
         // GET: api/Auths/5

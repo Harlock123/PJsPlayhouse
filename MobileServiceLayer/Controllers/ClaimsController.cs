@@ -13,9 +13,9 @@ namespace MobileServiceLayer.Controllers
     {
         // GET: api/Claims
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Claim> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new Claim[] { new Claim(),new Claim(),new Claim(),new Claim() };
         }
 
         // GET: api/Claims/5
