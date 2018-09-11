@@ -2,17 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="PJsPlayhouse.MyTeamPage">
-    <StackLayout>
-        
-        <Label  Text="Dr Smith" />
-        <Label  Text="Dr Fine" />
-        <Label  Text="Dr Howard" />
-        <Label  Text="Dr Smith" />
-        <Label  Text="Dr Fine" />
-        <Label  Text="Dr Howard" />
-        <Label  Text="Dr Smith" />
-        <Label  Text="Dr Fine" />
-        <Label  Text="Dr Howard" />
-
+    <StackLayout Orientation="Vertical">
+        <ListView>
+          
+        </ListView>
     </StackLayout>
 </ContentPage>
