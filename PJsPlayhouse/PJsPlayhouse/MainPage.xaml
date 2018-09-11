@@ -1,14 +1,45 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PJsPlayhouse"
              x:Class="PJsPlayhouse.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+   <Grid >
+    <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+    
+    <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+        
+        <Label Grid.ColumnSpan="6"
+          Grid.Row="0"
+          HorizontalOptions="Center"
+          FontSize="Medium"
+          FontAttributes="Bold"
+          Text="PJs Playground" />
+    
+    
+    <Button Clicked="Handle_MyTeamClicked" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="My Team" />
+        
+    <Button Clicked="Handle_MyAssessmentsClicked" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Text="My&#x0a;Assessments&#x0a;Plans"  />
+    
+    <Button Clicked="Handle_MyServicesClicked" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Text="My Services" />
+        
+    <Button Clicked="Handle_MyAuthsClicked" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Text="My&#x0a;Authorizations"  />
+    
+    <Button Clicked="Handle_MyMessagesClicked" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="6" Text="My&#x0a;Messages"  />   
+        
+   </Grid>
 
 </ContentPage>

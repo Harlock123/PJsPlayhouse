@@ -10,8 +10,11 @@ namespace PJsPlayhouse
         public App()
         {
             InitializeComponent();
+            //Application.Current.MainPage.Navigation.PushAsync
 
-            MainPage = new MainPage();
+            var nav = new NavigationPage(new MainPage());
+
+            MainPage = nav;
         }
 
         protected override void OnStart()

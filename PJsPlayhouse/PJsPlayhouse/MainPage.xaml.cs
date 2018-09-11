@@ -12,6 +12,36 @@ namespace PJsPlayhouse
         public MainPage()
         {
             InitializeComponent();
+
+            //Application.Current.MainPage.Navigation.PushAsync(MainPage);
+        }
+
+
+        async void Handle_MyTeamClicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new MyTeamPage());
+
+            //Application.Current.MainPage = new MyTeamPage();
+        }
+
+        void Handle_MyAssessmentsClicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void Handle_MyServicesClicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void Handle_MyAuthsClicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void Handle_MyMessagesClicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
