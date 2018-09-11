@@ -64,6 +64,11 @@ namespace MobileServiceLayer.Controllers
     {
         public string ServiceCode { get; set; }
         public string ServiceCodeDescription { get; set; }
+        public string MOD1 { get; set; }
+        public string MOD2 { get; set; }
+        public string MOD3 { get; set; }
+        public string MOD4 { get; set; }
+        public string MOD5 { get; set; }
         public int Units { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
@@ -72,6 +77,19 @@ namespace MobileServiceLayer.Controllers
         public string MemberID { get; set; }
         public string AssociatedAuthID { get; set; }
         public string ClaimID { get; set; }
+        public string DIAG1 { get; set; }
+        public string DIAG2 { get; set; }
+        public string DIAG3 { get; set; }
+        public string DIAG4 { get; set; }
+        public string DIAG5 { get; set; }
+        public string DIAG6 { get; set; }
+        public string DIAG7 { get; set; }
+        public string DIAG8 { get; set; }
+        public double ChargedAmt { get; set; }
+        public double PaidAmt { get; set; }
+        public double CopayAmt { get; set; }
+
+
 
         public Claim()
         {
@@ -87,6 +105,26 @@ namespace MobileServiceLayer.Controllers
             MemberID = "";
             AssociatedAuthID = "";
             ClaimID = "";
+
+            DIAG1 = "";
+            DIAG2 = "";
+            DIAG3 = "";
+            DIAG4 = "";
+            DIAG5 = "";
+            DIAG6 = "";
+            DIAG7 = "";
+            DIAG8 = "";
+
+            MOD1 = "";
+            MOD2 = "";
+            MOD3 = "";
+            MOD4 = "";
+            MOD5 = "";
+
+            ChargedAmt = 0.0;
+            PaidAmt = 0.0;
+            CopayAmt = 0.0;
+
 
         }
 
