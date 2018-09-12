@@ -93,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PJsPlayhouse\PJsPlayhouse.csproj">
-      <Project>{663DBECA-D487-4209-8C23-34C875CD50B5}</Project>
+      <Project>{FC069C69-DFE8-4FB0-BB58-21AEF16D0674}</Project>
       <Name>PJsPlayhouse</Name>
     </ProjectReference>
   </ItemGroup>

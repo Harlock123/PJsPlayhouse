@@ -15,4 +15,7 @@
   <ItemGroup>
     <None Remove="MyTeam.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+  </ItemGroup>
 </Project>
