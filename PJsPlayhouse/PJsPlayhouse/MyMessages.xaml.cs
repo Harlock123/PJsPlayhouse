@@ -24,7 +24,7 @@ namespace PJsPlayhouse
                             "Todd Watson", "I wanted to ask you what you Doctors name was. The one you go to that helped you get your sugar undercontrol"));
             TheMessageList.Children.Add(new Controls.MemberMessage(DateTime.Now,
                             "Dr Carey", "We need to get you into the office for a  screening that may have you eligible for a new sugar medication that may be less expensive for you in the long run. Please call and make an appointment..."));
-
+             
 
         }
     }
