@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Grid xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:local="clr-namespace:PJsPlayhouse.Controls"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -22,7 +22,7 @@
            Text="{Binding MessageFromText}"/>
     <Label x:Name="MessageBody" TextColor="Black"
            FontAttributes="Italic"
-           FontSize="14"
+           FontSize="13"
            Grid.Row="1" Grid.Column="1"
            LineBreakMode="WordWrap"
            Text="{Binding MessageBodyText}"/>
@@ -30,6 +30,7 @@
     <Label x:Name="MessageSentDate" TextColor="Black"
            FontAttributes="Italic"
            FontSize="14"
+           VerticalOptions="Center"
            Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
            LineBreakMode="WordWrap"
            Text="{Binding MessageSentDateText}"/>

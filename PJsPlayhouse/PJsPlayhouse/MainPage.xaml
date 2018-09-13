@@ -15,7 +15,7 @@
     </Grid.ColumnDefinitions>
     
     <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -30,15 +30,20 @@
           Text="PJs Playground" />
     
     
-    <Button Clicked="Handle_MyTeamClicked" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="My Team" />
+    <Button Clicked="Handle_MyTeamClicked" BackgroundColor="Teal" TextColor="White"
+            Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Text="My Team" />
         
-    <Button Clicked="Handle_MyAssessmentsClicked" Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Text="My&#x0a;Assessments&#x0a;Plans"  />
+    <Button Clicked="Handle_MyAssessmentsClicked" BackgroundColor="Teal" TextColor="White"
+            Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Text="My Assessments"  />
     
-    <Button Clicked="Handle_MyServicesClicked" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Text="My Services" />
+    <Button Clicked="Handle_MyServicesClicked" BackgroundColor="Teal" TextColor="White"
+            Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Text="My Services" />
         
-    <Button Clicked="Handle_MyAuthsClicked" Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Text="My&#x0a;Authorizations"  />
+    <Button Clicked="Handle_MyAuthsClicked" BackgroundColor="Teal" TextColor="White"
+            Grid.Column="3" Grid.Row="2" Grid.ColumnSpan="3" Text="My Authorizations"  />
     
-    <Button Clicked="Handle_MyMessagesClicked" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="6" Text="My&#x0a;Messages"  />   
+    <Button Clicked="Handle_MyMessagesClicked" BackgroundColor="Teal" TextColor="White"
+            Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="6" Text="My Messages"  />   
         
    </Grid>
 
