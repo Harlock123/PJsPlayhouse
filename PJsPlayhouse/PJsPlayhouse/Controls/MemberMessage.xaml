@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:local="clr-namespace:PJsPlayhouse.Controls"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    HorizontalOptions="FillAndExpand"
+    x:Class="PJsPlayhouse.Controls.MemberMessage" BackgroundColor="Cornsilk"
+      HeightRequest="100">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="20"/>
+        <RowDefinition Height="50"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1.5*"/>
+        <ColumnDefinition Width="5*"/>
+        <ColumnDefinition Width="1*"/>
+    </Grid.ColumnDefinitions>
+    
+    <Label x:Name="MessageFrom" TextColor="Black"
+           FontAttributes="Bold"
+           FontSize="16"
+           Grid.Row="0" Grid.Column="1"
+           Text="{Binding MessageFromText}"/>
+    <Label x:Name="MessageBody" TextColor="Black"
+           FontAttributes="Italic"
+           FontSize="14"
+           Grid.Row="1" Grid.Column="1"
+           LineBreakMode="WordWrap"
+           Text="{Binding MessageBodyText}"/>
+    
+    <Label x:Name="MessageSentDate" TextColor="Black"
+           FontAttributes="Italic"
+           FontSize="14"
+           Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
+           LineBreakMode="WordWrap"
+           Text="{Binding MessageSentDateText}"/>
+
+</Grid>

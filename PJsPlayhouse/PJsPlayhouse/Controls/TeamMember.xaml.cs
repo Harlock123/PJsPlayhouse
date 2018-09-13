@@ -9,6 +9,9 @@ namespace PJsPlayhouse.Controls
         public TeamMember()
         {
             InitializeComponent();
+            PicText = "DOC";
+            TeamMemberTitleText = "The Team members name goes here";
+            TeamMemberDescriptionText = "The description of the team member goes here";
         }
 
         public TeamMember(string PT, string TT, string TD)

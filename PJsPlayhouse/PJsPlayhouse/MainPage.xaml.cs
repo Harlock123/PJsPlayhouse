@@ -41,7 +41,7 @@ namespace PJsPlayhouse
 
         async void Handle_MyMessagesClicked(object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new UnderConstructionPage());
+            await Navigation.PushAsync(new MyMessages());
         }
     }
 }
