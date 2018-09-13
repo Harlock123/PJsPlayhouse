@@ -24,24 +24,24 @@ namespace PJsPlayhouse
             //Application.Current.MainPage = new MyTeamPage();
         }
 
-        void Handle_MyAssessmentsClicked(object sender, System.EventArgs e)
+        async void Handle_MyAssessmentsClicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await Navigation.PushAsync(new UnderConstructionPage());
         }
 
-        void Handle_MyServicesClicked(object sender, System.EventArgs e)
+        async void Handle_MyServicesClicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await Navigation.PushAsync(new UnderConstructionPage());
         }
 
-        void Handle_MyAuthsClicked(object sender, System.EventArgs e)
+        async void Handle_MyAuthsClicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await Navigation.PushAsync(new UnderConstructionPage());
         }
 
-        void Handle_MyMessagesClicked(object sender, System.EventArgs e)
+        async void Handle_MyMessagesClicked(object sender, System.EventArgs e)
         {
-            throw new NotImplementedException();
+            await Navigation.PushAsync(new UnderConstructionPage());
         }
     }
 }

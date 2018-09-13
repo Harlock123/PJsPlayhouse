@@ -157,4 +157,7 @@
       <Name>PJsPlayhouse</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\underconstruction.jpg" />
+  </ItemGroup>
 </Project>
