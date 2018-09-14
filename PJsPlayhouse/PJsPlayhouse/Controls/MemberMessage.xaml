@@ -17,6 +17,21 @@
         <ColumnDefinition Width=".5*"/>
     </Grid.ColumnDefinitions>
     
+    <Grid.GestureRecognizers>
+        <TapGestureRecognizer
+        
+            Tapped="TapGestureRecognizer_Tapped"
+            NumberOfTapsRequired="1" >
+            
+        </TapGestureRecognizer>
+        <ClickGestureRecognizer 
+        
+            Clicked="ClickGestureRecognizer_Clicked" 
+            NumberOfClicksRequired="1">
+            
+        </ClickGestureRecognizer>
+    </Grid.GestureRecognizers>
+    
     <Label x:Name="MessageFrom" TextColor="Black"
            FontAttributes="Bold"
            FontSize="16"

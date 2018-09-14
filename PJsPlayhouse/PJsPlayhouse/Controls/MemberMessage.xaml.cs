@@ -83,5 +83,15 @@ namespace PJsPlayhouse.Controls
             //get;
             set { MessageSentDate.Text = value; }
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            MessageSentDateText = DateTime.Now.ToShortTimeString();
+        }
+
+        private void ClickGestureRecognizer_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
