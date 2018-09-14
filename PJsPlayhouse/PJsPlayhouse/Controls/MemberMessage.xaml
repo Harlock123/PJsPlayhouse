@@ -3,16 +3,18 @@
     xmlns:local="clr-namespace:PJsPlayhouse.Controls"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     HorizontalOptions="FillAndExpand"
-    x:Class="PJsPlayhouse.Controls.MemberMessage" BackgroundColor="Cornsilk"
-      HeightRequest="100">
+    x:Class="PJsPlayhouse.Controls.MemberMessage" 
+      BackgroundColor="Cornsilk"
+      HeightRequest="100"
+      Padding="0">
     <Grid.RowDefinitions>
         <RowDefinition Height="20"/>
         <RowDefinition Height="50"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="1.5*"/>
+        <ColumnDefinition Width="auto"/>
         <ColumnDefinition Width="5*"/>
-        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width=".5*"/>
     </Grid.ColumnDefinitions>
     
     <Label x:Name="MessageFrom" TextColor="Black"
@@ -24,11 +26,11 @@
            FontAttributes="Italic"
            FontSize="13"
            Grid.Row="1" Grid.Column="1"
-           LineBreakMode="WordWrap"
+           LineBreakMode="WordWrap" 
            Text="{Binding MessageBodyText}"/>
-    
+
     <Label x:Name="MessageSentDate" TextColor="Black"
-           FontAttributes="Italic"
+           FontAttributes="Bold"
            FontSize="14"
            VerticalOptions="Center"
            Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"

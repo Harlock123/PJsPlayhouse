@@ -32,6 +32,40 @@ namespace PJsPlayhouse.Controls
 
         }
 
+        public MemberMessage(long id, DateTime SD, string MF, string MB, string MTYPE)
+        {
+            InitializeComponent();
+
+            MessageID = id;
+            MessageFromText = MF;
+            MessageSentDateText = SD.ToShortDateString();
+            MessageBodyText = MB;
+
+            MessageType = MTYPE;
+
+            switch (MTYPE.ToUpper())
+            {
+                case "TEXT":
+                    this.BackgroundColor = Color.LightCoral;
+                    break;
+                case "EMAIL":
+                    this.BackgroundColor = Color.LightGreen;
+                    break;
+                case "SYSTEM":
+                    this.BackgroundColor = Color.LightSeaGreen;
+                    break;
+                default:
+                    this.BackgroundColor = Color.Cornsilk;
+                    break;
+            }
+
+        }
+
+        public string MessageType { get; set; }
+
+        public long MessageID { get; set; }
+
+
         public string MessageFromText
         {
             //get;
